@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/company/临检/code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demo/深度学习" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/leetcode" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<html>
+
+
+<body>
+<title>{{ title }}</title>
+
+<h1>{{ welcome }}</h1>
+
+<p>Learning Python and Django Here!</p>
+<li>{{ content }}</li>
+<p></p>
+<li>您是第{{ count }}个访问本站的朋友</li>
+<li>访问时间:{{ time }}</li>
+
+
+<span class="status">Balance:&nbsp;{{ request.user.profile.coins }}
+        <a href="www.baidu.com">点我啊</a>
+    </span>
+
+<h2 id="ntfText">就绪</h2></br>
+<button type="button" class="btn btn-success" id="btnTerminalSvr">关闭服务器</button>
+
+
+</body>
+</html>
