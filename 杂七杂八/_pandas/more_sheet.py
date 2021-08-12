@@ -1,4 +1,4 @@
-import pandas  as pd
+import pandas as pd
 
 read_path = 'import_data_test.xlsx'
 write_path = 'res.xlsx'
