@@ -56,7 +56,6 @@ func main() {
 		fmt.Println("用户注册逻辑")
 	} else if key == 3 {
 		fmt.Println("用户退出逻辑")
-
 	}
 
 }
