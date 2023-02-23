@@ -1,8 +1,5 @@
 module redisDemo
 
 go 1.19
-
-require (
-	github.com/garyburd/redigo v1.6.4 // indirect
-	github.com/gomodule/redigo v1.8.9 // indirect
-)
+// go mod tidy 创建第三方包版本文件
+require github.com/gomodule/redigo v1.8.9
