@@ -5,8 +5,8 @@ import (
 	"os"
 )
 
-var username string
-var password string
+var userId int
+var passWord string
 
 func main() {
 	fmt.Println("多人在线聊天室...")
@@ -41,11 +41,11 @@ func main() {
 	if key == 1 {
 		// 用户登陆
 		fmt.Print("请输入用户的账号：")
-		fmt.Scanln(&username)
+		fmt.Scan(&userId)
 		fmt.Print("请输入用户的密码：")
-		fmt.Scanln(&password)
+		fmt.Scan(&passWord)
 		// 同包下的方法可以直接引用
-		err := login(username, password)
+		err := login(userId, passWord)
 		if err != nil {
 			fmt.Println("登陆失败：", err)
 		} else {
