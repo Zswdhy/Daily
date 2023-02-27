@@ -40,9 +40,9 @@ func main() {
 	// 根据用户的输入，显示其他的提示信息
 	if key == 1 {
 		// 用户登陆
-		fmt.Print("请输入用户的账号：")
+		fmt.Println("请输入用户的账号：")
 		fmt.Scan(&userId)
-		fmt.Print("请输入用户的密码：")
+		fmt.Println("请输入用户的密码：")
 		fmt.Scan(&passWord)
 		// 同包下的方法可以直接引用
 		err := login(userId, passWord)
@@ -51,7 +51,6 @@ func main() {
 		} else {
 			fmt.Println("登陆成功")
 		}
-
 	} else if key == 2 {
 		fmt.Println("用户注册逻辑")
 	} else if key == 3 {

@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net"
+	"time"
 )
 
 func login(userId int, passWord string) (err error) {
@@ -55,5 +56,13 @@ func login(userId int, passWord string) (err error) {
 	}
 	fmt.Printf("客户端发送消息长度成功... len = %d , data = %s ", len(data), string(data))
 
+	// 发送消息体本身
+	_, err = conn.Write(data)
+	if err != nil {
+		fmt.Println("conn.write err = ", err)
+		return
+	}
+	time.Sleep(20 * time.Second)
+	fmt.Println("客户端正在取消链接。。。,20秒链接")
 	return
 }
